@@ -130,7 +130,7 @@ if (process.argv.length != 3) {
 
 let portNum = process.argv[2];
 
-http.createServer(app).listen(Number(portNum));
+http.createServer(app).listen(process.env.PORT || Number(portNum));
 console.log(`Web server started and running at http://localhost:${portNum}`);
 
 require("dotenv").config({ path: path.resolve(__dirname, '.env') });
