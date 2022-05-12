@@ -1,0 +1,20 @@
+{
+  "name": "zooproject",
+  "version": "1.0.0",
+  "description": "CMSC335 Final Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node zooServer.js 5000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dylan Bourgerie, Brent Freedman, Jaiaditya Upadhyay",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "http": "^0.0.1-security",
+    "mongodb": "^4.5.0",
+    "node-fetch": "^2.6.7"
+  }
+}
