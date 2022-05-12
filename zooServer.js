@@ -143,7 +143,7 @@ const collectionName = process.env.MONGO_COLLECTION;
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
-const uri = `mongodb+srv://${userName}:${password}@cluster0.qh8b9.mongodb.net/${dbName}?retryWrites=true&w=majority`;
+const uri = process.env.MONGODB_URI || `mongodb+srv://${userName}:${password}@cluster0.qh8b9.mongodb.net/${dbName}?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 let prompt = "Stop to shutdown the server: ";
